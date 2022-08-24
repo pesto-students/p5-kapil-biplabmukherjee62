@@ -1,0 +1,183 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+  height: 100%; /*important to set this*/
+}
+
+body {
+  display: flex; 
+  flex-direction: column; /*stack main and footer flex-items vertically*/
+  
+  height: 100%;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  color: #222;
+  font-size: 16px;
+  }
+
+main {
+  flex: 1 0 auto; /*fill available space*/
+  display: flex;
+  }
+
+aside {
+  flex: 0 0 40px; /*no grow or shrink*/
+  display: flex; /*flex-container*/
+  flex-direction: column; /*stack flex-item's vertically*/
+  justify-content: space-around; /*works on vertical direction*/
+  align-items: center; /*affects horizontal direction*/
+  background-color: #f2f2f2; 
+  
+  }
+
+aside i.fa {
+ font-size: 20px;  /*font size icons*/
+  }
+
+section.content {
+  display: flex;
+  flex: 1 0 auto; /*grow to fill entire avail space*/
+  flex-direction: column;
+}
+
+section.content .music-header {
+  flex: 0 0 280px; /*no grow or shrink*/
+  display: flex;  
+  padding: 40px;
+  background-color: #4e4e4e;
+}
+
+section.content .music-header .the-progressives-music {
+	flex: 1 0 auto; /*edited - main guy*/
+	display: flex;
+	flex-direction: column;
+	font-weight: 500;
+	color: #fff;
+	padding-left: 50px;
+  font-size: 20px;
+}
+
+.the-progressives-music div:nth-child(1) {
+  margin-bottom: auto;
+}
+
+.the-progressives-music div:nth-child(2) {
+  margin-top: 0;
+}
+
+.the-progressives-music div:nth-child(2) i.fa {
+  font-size: 16px;
+  padding: 0 0.7em;
+  font-weight: 300;
+}
+.the-progressives-music div:nth-child(1) p:first-child {
+  font-size: 1.8em;
+  margin: 0 0 10px;
+}
+
+.the-progressives-music div:nth-child(1) p:not(:first-child) {
+  font-size: 16px;
+  margin: 2px 0;
+}
+
+.music-list {
+    flex: 1 0 auto;
+    list-style-type: none;
+    padding: 5px 10px 0px;
+}
+li {
+  display: flex; /*Paragraphs are now displayed on one line*/
+  padding: 0 20px; /*Some breahing space*/
+  min-height: 50px;
+}
+li p {
+  flex: 0 0 25%;
+}
+li span.catty-cloud {
+  border: 1px solid black;
+  font-size: 0.6em;
+  padding: 3px;
+}
+li:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+footer {
+	display: flex;
+	flex: 0 0 90px;
+	flex: 0 0 90px; 
+	padding: 10px;
+	color: #fff;
+	background-color: rgba(61, 100, 158, .9);
+}
+
+.the-progressives-music-small {
+	display: flex;
+	margin-right: auto;
+}
+.the-progressives-music-small img {
+	padding-right: 10px;
+	width: 100px;  
+}
+
+
+.the-progressives-music-controls {
+	display: flex;
+	align-items: center;
+  justify-content: space-between;
+	width: 50%;
+}
+
+/*mobile responsiveness*/
+
+@media screen and (max-width: 64em) {
+	.small-hide {
+		display:none;
+	}
+	.small-text-center {
+		text-align: center;
+	}
+	.small-text-right {
+		text-align: right;
+	}
+
+	section.content .music-header {
+		flex: 0 0 auto; /*auto compute height*/
+		display: flex;
+		flex-direction: column; /*stack image and music details vertically*/
+		align-items: center; /*center items. left-to-right*/
+		padding: 40px 0;
+		background-color: #FAFAD2;
+	}
+
+	section.content .music-header .the-progressives-music{
+		padding: 0; /*remove the spacing.*/
+	}
+
+	.music-header img {
+		width: 150px;  /*album art*/
+	}
+
+
+	
+	.the-progressives-music div:nth-child(1) p:first-child {   /*album details*/
+		margin: 20px 0;
+		font-size: 16px;
+	}
+	
+	li p {                /*song list*/
+		flex: 0 0 50%;
+	}
+
+	.the-progressives-music-controls {     /*music control*/
+		justify-content: space-around;
+	}
+}
+
+
+
+
+
+
