@@ -1,0 +1,506 @@
+.background {
+  background: black;
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
+/* Header Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+.columns {
+  display: flex;
+  grid-template-columns: 50% 50%;
+}
+.firstHalf img {
+  width: 100%;
+}
+.firstsection {
+  display: flex;
+  height: auto;
+  margin: 50px auto;
+}
+
+.secondsection {
+  /* background-color: blue;*/
+  display: flex;
+  height: auto;
+  margin: 50px auto;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  max-width: 80%;
+  margin: auto;
+  height: 80%;
+}
+
+.firsthalf {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondhalf {
+  width: 30%;
+}
+
+.secondhalf img {
+  width: 70%;
+  border: 4px solid white;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+}
+
+.text-big {
+  font-family: "Piazzolla", serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.text-small {
+  font-size: 18px;
+  text-align: justify;
+}
+.column left .firstHalf .text-small {
+  font-size: 18px;
+  color: #fffff;
+}
+.btn {
+  padding: 8px 20px;
+  margin: 7px 0;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 6px 10px;
+  vertical-align: middle;
+}
+
+.section {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: auto;
+}
+
+.section-Left {
+  flex-direction: row-reverse;
+}
+
+.paras {
+  padding: 0px 65px;
+}
+
+.thumbnail img {
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 26px;
+  margin-top: 19px;
+}
+
+.center {
+  text-align: center;
+}
+
+.text-footer {
+  text-align: center;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.container {
+  width: 550px;
+  margin: 45px auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.form-part {
+  margin: 20px 0;
+}
+
+.form-part h2 {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 15px;
+}
+
+.text-input,
+.radio-button,
+.check-boxes {
+  margin-bottom: 13px;
+}
+
+.text-input label,
+.radio-button label,
+.check-boxes label {
+  display: block;
+  margin-bottom: 3px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.radio-button label,
+.check-boxes label {
+  margin-bottom: 7px;
+  font-weight: 900;
+}
+
+.text-input input,
+.text-input textarea,
+.text-input select {
+  padding: 10px 10px;
+  display: block;
+  width: 100%;
+  border: solid 3px #ccc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.text-input select {
+  width: 100%;
+}
+
+.text-input textarea {
+  height: 100px;
+}
+
+.sqr-input .text-input,
+.sqr-radio-input .radio-button,
+.sqr-check-input .check-boxes {
+  float: left;
+  width: 45%;
+}
+
+.sqr-input .text-input:nth-child(1),
+.sqr-radio-input .radio-button:nth-child(1),
+.sqr-check-input .check-boxes:nth-child(1) {
+  margin-right: 10%;
+}
+
+.cub-input .text-input {
+  float: left;
+  width: 26.66%;
+}
+
+.cub-input .text-input:nth-child(1),
+.cub-input .text-input:nth-child(2) {
+  margin-right: 10%;
+}
+
+.ns-radio-btn input[type="radio"],
+.ns-check-box input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.ns-radio-btn {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: left;
+  margin: 3px 7px 0 0;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 3px solid #ccc;
+  box-shadow: 0 0 1px #ccc;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 1)),
+    color-stop(47%, rgba(246, 246, 246, 1)),
+    color-stop(100%, rgba(237, 237, 237, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+}
+
+.checkedRadio {
+  -moz-box-shadow: inset 0 0 5px 1px #ccc;
+  -webkit-box-shadow: inset 0 0 5px 1px #ccc;
+  box-shadow: inset 0 0 5px 1px #ccc;
+}
+
+.ns-radio-btn i {
+  border: 1px solid #e1e2e4;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.checkedRadio i {
+  background-color: #898a8c;
+}
+
+.ns-check-box {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 2px 7px 0 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 1px #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 1)),
+    color-stop(47%, rgba(246, 246, 246, 1)),
+    color-stop(100%, rgba(237, 237, 237, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 47%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+  border: 1px solid #ccc;
+}
+
+.ns-check-box i {
+  background: url("http://cdn1.iconfinder.com/data/icons/mimiGlyphs/16/check_mark.png")
+    no-repeat center center;
+  position: absolute;
+  left: 3px;
+  bottom: -15px;
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  -webkit-transform: rotateZ(-180deg);
+  -moz-transform: rotateZ(-180deg);
+  -o-transform: rotateZ(-180deg);
+  transform: rotateZ(-180deg);
+}
+
+.checkedBox {
+  -moz-box-shadow: inset 0 0 5px 1px #ccc;
+  -webkit-box-shadow: inset 0 0 5px 1px #ccc;
+  box-shadow: inset 0 0 5px 1px #ccc;
+  border-bottom-color: #fff;
+}
+
+.checkedBox i {
+  bottom: 2px;
+  -webkit-transform: rotateZ(0deg);
+  -moz-transform: rotateZ(0deg);
+  -o-transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
+}
+
+.radio-button ul li,
+.check-boxes ul li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+  margin-bottom: 7px;
+}
+
+.sqr-radio-input .radio-button ul li,
+.sqr-check-input .check-boxes ul li {
+  margin-right: 15px;
+}
+
+.radio-button ul li span {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.check-boxes ul li span {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.sqr-input .text-input .sqr-input .text-input:nth-child(1) {
+  margin-right: 15%;
+  width: 40%;
+}
+
+.margin-bottom-zero {
+  margin-bottom: 0px;
+}
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 600px) {
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+.column.left {
+  width: 100%;
+}
+.columns {
+  width: 100%;
+  display: block ;
+}
+.sqr-input .text-input .sqr-input .text-input:nth-child(1){
+	
+  margin-right: 15%;
+  width: 100%;
+}
+.columns {
+  display: inline-block;
+  grid-template-columns: 50% 50%;
+}
+
+}
+@media only screen and (max-width: 768px) {	
+body{width: 100%;
+margin:0px;
+padding:0px;}
+.container {
+  width: 100%;
+  margin: auto;
+}
+.columns {
+  display: inline-block;
+  grid-template-columns: 50% 50%;
+}
+form.contactForm {
+  width: 90%;
+  padding: 5%;
+}
+.text-input, input[type=text] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .sqr-input, input[type=text] {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .cub-input, input[type=text] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .cub-input .text-input, input[type=text] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .sqr-input .text-input, input[type=text] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .sqr-radio-input, input[type=radio] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .sqr-input .text-input:nth-child(1),
+  .sqr-radio-input .radio-button:nth-child(1),
+  .sqr-check-input .check-boxes:nth-child(1) {
+  margin-right: 0%;
+}
+}
+
+
+@media (min-width: 480px) {
+    
+} 
